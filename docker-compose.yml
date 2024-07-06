@@ -4,6 +4,7 @@ version: '3.9'
 services:
 
   db:
+    container_name: postgres
     image: postgres
     restart: always
     ports:
@@ -20,7 +21,8 @@ services:
       POSTGRES_DB: nextJsExample
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: example
-
+    volumes:
+      - ./postgres-data:/var/lib/postgresql/data
   adminer:
     image: adminer
     restart: always
