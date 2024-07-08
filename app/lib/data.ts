@@ -117,7 +117,7 @@ export async function fetchFilteredInvoices(
         invoices.status ILIKE $1
       ORDER BY invoices.date DESC
       LIMIT $2 OFFSET $3
-    `, [`%{query}%`, ITEMS_PER_PAGE, offset]);
+    `, [`%${query}%`, ITEMS_PER_PAGE, offset]);
 
     return invoices.rows;
   } catch (error) {
