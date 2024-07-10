@@ -37,3 +37,4 @@ next-env.d.ts
 
 # Database data for development
 /postgres-data
+.docker/postgres-data

@@ -5,13 +5,28 @@ This is the starter template for the Next.js App Router Course. It contains the 
 For more information, see the [course curriculum](https://nextjs.org/learn) on the Next.js Website.
 
 ## Changes to the suggested setup
-I changed to not use vercel/postgres and use a local database.
-It was created a docker to support the execution.
+I changed to not using vercel/postgres and using a local database.
+It created a docker to support the execution.
 It uses adminer to access the Database on the browser.
 [Database interface for administration](http://localhost:8080/)
 
-## Fist steps to run the application
-1) Execute `docker-compose up -d` to start the database
-2) Run the project `pnpm dev`
-3) Open the seed URL [Seed](http://localhost:3000/seed)
-4) Open the [Application](http://localhost:3000/)
+## Setting up the Database for the environment
+
+### Using Docker-Compose
+Execute `docker-compose up -d` to start the database
+
+### Using Docker Dev Environment
+1) Open the Docker Desktop
+2) Go to Dev Environments
+3) Hit the Create button at the right top
+4) Continue until the setup step which you need to select the local
+5) Give the container a name and choose the project folder, the rest will be dealt with by Docker.
+6) Now when you start the Docker it will start your dev environment automatically.
+
+### Seed with new data
+After starting the database with docker-compose or Docker Dev Environment access the URLs below.
+1) Open the seed URL [Seed](http://localhost:3000/seed)
+2) Open the [Application](http://localhost:3000/)
+
+## Execut the application
+Run the project `pnpm dev`
