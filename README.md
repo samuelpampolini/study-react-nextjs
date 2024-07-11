@@ -13,7 +13,8 @@ It uses adminer to access the Database on the browser.
 ## Setting up the Database for the environment
 
 ### Using Docker-Compose
-Execute `docker-compose up -d` to start the database
+1) Open the folder /.docker/
+2) Execute `docker-compose up -d` to start the database
 
 ### Using Docker Dev Environment
 1) Open the Docker Desktop
