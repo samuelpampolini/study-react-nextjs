@@ -31,3 +31,9 @@ After starting the database with docker-compose or Docker Dev Environment access
 
 ## Execut the application
 Run the project `pnpm dev`
+
+## Authentication
+I have used the version of OpenSSL that came with Git to avoid the need to install it on Windows.
+You can find it on the Git installation folder.
+`C:\Program Files\Git\usr\bin`
+Command to generate the key `openssl rand -base64 32`, this will create a random 64 based string with 32 bytes.
